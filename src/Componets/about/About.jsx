@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BsArrowUpLeft, BsArrowUpRight, BsCheck, BsCheck2 } from 'react-icons/bs';
 import './about.css'; // تأكد إن عندك ملف CSS اسمه about.css
-import 'animate.css';
+import about from '../../../public/images/about.png'
 export default function About() {
      const [scrollY, setScrollY] = useState(0);
  
@@ -26,11 +26,11 @@ export default function About() {
       <div className="row align-items-center px-md-5">
         {/* استخدمنا الكلاسات هنا لتطبيق الانيميشن */}
         <div className={`col-lg-6  $ `}  >
-          <div className={`${scrollY >=200 ?  'animate__backInLeft visible ' : 'visually-hidden'}`}  style={{animationDuration:'4S'}}></div>
-          <img className={`w-100 `} src='../../../public/images/about.png' alt="" />
+          <div className={``}  style={{animationDuration:'4S'}}></div>
+          <img className={`w-100 `} src={about} alt="" />
         </div>
         <div className={`col-lg-6 overflow-hidden`}  >
-          <div className={`  info-about py-5 pe-5   ${scrollY >=200 ?  'animate__backInLeft visible ' : 'visually-hidden'}`}  style={{animationDuration:'4S'}}>
+          <div className={`  info-about py-5 pe-5 `}  >
             <h1 className={``}> <span>// </span> من هو بسام الخوري؟ </h1>
             <p className='pt-2'>بسام الدوري هو مدرب محترف معتمد في تطوير الوعي الذاتي والتنمية البشرية، لديه شغف للعمل لأكثر من 15 عامًا في تقديم الدورات التدريبية والاستشارات التي تساعد الأفراد على تحقيق التغيير الإيجابي في حياتهم.</p>
             <div className='p-0 m-0'>
